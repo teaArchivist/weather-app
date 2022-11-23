@@ -1,0 +1,122 @@
+h3 {
+  font-size: 25px;
+}
+
+.weather-app {
+  background-image: url("images/seascape.jpg");
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  background-position: center;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+  max-width: 1000px;
+  max-height: 640px;
+}
+
+.search {
+  position: relative;
+  width: 30%;
+  right: -350px;
+}
+.btn-light {
+  position: relative;
+  margin: auto 900px;
+  top: -38px;
+}
+.img-sun {
+  position: relative;
+  object-fit: cover;
+  display: block;
+  height: 175px;
+  width: 175px;
+  margin: auto 15px;
+  top: -25px;
+}
+.main {
+  position: relative;
+  display: block;
+  margin: -200px 250px;
+}
+.units {
+  position: relative;
+  right: -55px;
+  top: -45px;
+}
+.start-location {
+  position: relative;
+  margin: auto 0;
+}
+.data {
+  position: relative;
+  margin: auto 675px;
+  top: 21px;
+}
+.main-data-catagories {
+  list-style: none;
+  padding: 0;
+}
+.main-data-results {
+  list-style: none;
+}
+.forecast {
+  position: relative;
+  margin: 70px 22px;
+  text-align: center;
+}
+.five-day {
+  position: relative;
+  text-align: center;
+  font-weight: 300px;
+  top: -10px;
+}
+.first-day-col {
+  position: relative;
+  right: -10px;
+}
+.second-day-col {
+  position: relative;
+  right: -40px;
+}
+.third-day-col {
+  position: relative;
+  right: -73px;
+}
+.fourth-day-col {
+  position: relative;
+  right: -115px;
+}
+.fifth-day-col {
+  position: relative;
+  right: -140px;
+}
+.img-day1 {
+  display: block;
+  width: 115px;
+  height: 115px;
+  margin: 0 10px;
+}
+.img-day2 {
+  display: block;
+  width: 115px;
+  height: 115px;
+  margin: 0 10px;
+}
+.img-day3 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 15px;
+}
+.img-day4 {
+  display: block;
+  width: 115px;
+  height: 115px;
+  margin: 0 10px;
+}
+.img-day5 {
+  display: block;
+  width: 115px;
+  height: 115px;
+  margin: 0 10px;
+}
