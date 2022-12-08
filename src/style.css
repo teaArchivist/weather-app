@@ -40,6 +40,7 @@ h3 {
   position: relative;
   display: block;
   margin: -200px 250px;
+  margin-bottom: 0;
 }
 .units {
   position: relative;
