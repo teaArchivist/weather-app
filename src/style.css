@@ -60,6 +60,9 @@ body {
   margin: auto 626px;
   top: 35px;
 }
+.catagories {
+  padding: 5px 5px;
+}
 .main-data-catagories {
   list-style: none;
   padding: 0;
