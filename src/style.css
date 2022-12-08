@@ -11,7 +11,7 @@ body {
   padding: 15px;
   margin: 20px;
   max-width: 825px;
-  max-height: 610px;
+  max-height: 575px;
 }
 
 .search {
@@ -32,15 +32,15 @@ body {
   position: relative;
   object-fit: cover;
   display: block;
-  height: 175px;
-  width: 175px;
+  height: 165px;
+  width: 165px;
   margin: auto 30px;
-  top: -75px;
+  top: -55px;
 }
 .location {
   position: relative;
   display: block;
-  margin: -200px 250px;
+  margin: -160px 250px;
 }
 .main-degrees {
   font-weight: 400;
@@ -57,24 +57,18 @@ body {
 }
 .current-data {
   position: relative;
-  margin: auto 626px;
-  top: 35px;
+  margin: auto 620px;
+  top: 40px;
+  font-size: 12px;
 }
-.catagories {
-  padding: 5px 5px;
-}
-.main-data-catagories {
-  list-style: none;
-  padding: 0;
-}
+
 .main-data-results {
   list-style: none;
 }
 .forecast {
   position: relative;
-  margin: 55px 22px;
+  margin: 79px 13px;
   text-align: center;
-  font-size: 16px;
 }
 .five-day {
   position: relative;
