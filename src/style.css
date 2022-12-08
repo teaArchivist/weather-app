@@ -40,6 +40,8 @@ h3 {
   position: relative;
   display: block;
   margin: -200px 250px;
+}
+.main-degrees {
   margin-bottom: 0;
 }
 .units {
