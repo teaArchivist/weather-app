@@ -52,12 +52,16 @@ function showWeather(response) {
     response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
+  document.querySelector("#sunrise").innerHTML = response.data.sys.sunrise;
+  document.querySelector("#sunset").innerHTML = response.data.sys.sunset;
+  console.log(response.data);
 }
 function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(showPosition);
 }
+
 let currentLocationButton = document.querySelector("#btn-current-location");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
