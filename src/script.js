@@ -59,7 +59,12 @@ function showWeather(response) {
   document.querySelector("#sunset").innerHTML = formatDate(
     response.data.sys.sunset * 1000
   );
-  console.log(response.data);
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
 }
 function getCurrentLocation(event) {
   event.preventDefault();
