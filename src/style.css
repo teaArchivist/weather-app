@@ -24,7 +24,7 @@ li::first-letter {
   padding: 15px;
   margin: auto;
   max-width: 825px;
-  max-height: 575px;
+  max-height: 602px;
 }
 
 .search {
@@ -71,7 +71,7 @@ li::first-letter {
 .current-data {
   position: relative;
   margin: auto 620px;
-  top: 40px;
+  top: 21px;
   font-size: 12px;
 }
 
