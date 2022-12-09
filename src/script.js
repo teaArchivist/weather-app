@@ -53,8 +53,12 @@ function showWeather(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
-  document.querySelector("#sunrise").innerHTML = response.data.sys.sunrise;
-  document.querySelector("#sunset").innerHTML = response.data.sys.sunset;
+  document.querySelector("#sunrise").innerHTML = formatDate(
+    response.data.sys.sunrise * 1000
+  );
+  document.querySelector("#sunset").innerHTML = formatDate(
+    response.data.sys.sunset * 1000
+  );
   console.log(response.data);
 }
 function getCurrentLocation(event) {
