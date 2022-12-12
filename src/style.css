@@ -73,6 +73,9 @@ li::first-letter {
 .units .active:hover {
   text-decoration: none;
 }
+.units a {
+  text-decoration: none;
+}
 .start-location {
   position: relative;
   margin: auto 0;
