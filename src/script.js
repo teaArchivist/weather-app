@@ -1,6 +1,7 @@
 let now = new Date();
 
-function formatDate(time) {
+function formatDate(timestamp) {
+  let time = new Date(timestamp);
   let days = [
     "Sunday",
     "Monday",
@@ -39,6 +40,7 @@ function formatDate(time) {
   //let mainTime = document.querySelector("#time");
   return `${weekday} ${month} ${date}, ${hours}:${minutes}`;
 }
+
 let mainDate = document.querySelector("#date");
 mainDate.innerHTML = formatDate(now);
 
