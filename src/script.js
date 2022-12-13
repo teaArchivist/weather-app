@@ -40,9 +40,23 @@ function formatDate(timestamp) {
   //let mainTime = document.querySelector("#time");
   return `${weekday} ${month} ${date}, ${hours}:${minutes}`;
 }
-
 let mainDate = document.querySelector("#date");
 mainDate.innerHTML = formatDate(now);
+
+function formatTime(timestamp) {
+  let time = new Date(timestamp);
+
+  let hours = now.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = now.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${hours}:${minutes}`;
+}
 
 function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -55,10 +69,10 @@ function showWeather(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
-  document.querySelector("#sunrise").innerHTML = formatDate(
+  document.querySelector("#sunrise").innerHTML = formatTime(
     response.data.sys.sunrise * 1000
   );
-  document.querySelector("#sunset").innerHTML = formatDate(
+  document.querySelector("#sunset").innerHTML = formatTime(
     response.data.sys.sunset * 1000
   );
 
