@@ -46,11 +46,11 @@ mainDate.innerHTML = formatDate(now);
 function formatTime(timestamp) {
   let time = new Date(timestamp);
 
-  let hours = now.getHours();
+  let hours = time.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   }
-  let minutes = now.getMinutes();
+  let minutes = time.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
@@ -69,6 +69,7 @@ function showWeather(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
+
   document.querySelector("#sunrise").innerHTML = formatTime(
     response.data.sys.sunrise * 1000
   );
