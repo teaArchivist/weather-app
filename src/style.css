@@ -95,12 +95,20 @@ li::first-letter {
 .five-day {
   position: relative;
   text-align: center;
+  font-size: 16px;
   font-weight: 300px;
   top: -10px;
 }
 .first-day-col {
   position: relative;
   right: -10px;
+}
+.forecast-temperature-one {
+  font-size: 13px;
+  opacity: 1;
+}
+.temp-low-one {
+  opacity: 0.6;
 }
 .second-day-col {
   position: relative;
