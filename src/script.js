@@ -43,6 +43,36 @@ function formatDate(timestamp) {
 let mainDate = document.querySelector("#date");
 mainDate.innerHTML = formatDate(now);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thurs", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+            <div class="col-sm-2 first-day-col">
+              <div class="weekday">${day}</div>
+              <div class="month-date">10/16</div>
+              <img
+                src="images/cloud-sun-solid.svg"
+                class="img-day1"
+                alt="Cloud covering the sun."
+                width="60"
+              />
+              <div class="forecast-temperature-one">
+                <span class="temp-high">H:86°</span
+                ><span class="temp-low"> L:72°</span>
+                </div>
+              </div>
+            
+            `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function formatTime(timestamp) {
   let time = new Date(timestamp);
 
@@ -138,5 +168,7 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
+
+displayForecast();
 
 searchCity("New York");

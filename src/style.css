@@ -103,56 +103,10 @@ li::first-letter {
   position: relative;
   right: -10px;
 }
-.forecast-temperature-one {
+.forecast-temperature {
   font-size: 13px;
   opacity: 1;
 }
-.temp-low-one {
+.temp-low {
   opacity: 0.6;
-}
-.second-day-col {
-  position: relative;
-  right: -40px;
-}
-.third-day-col {
-  position: relative;
-  right: -73px;
-}
-.fourth-day-col {
-  position: relative;
-  right: -115px;
-}
-.fifth-day-col {
-  position: relative;
-  right: -140px;
-}
-.img-day1 {
-  display: block;
-  width: 115px;
-  height: 115px;
-  margin: 0 10px;
-}
-.img-day2 {
-  display: block;
-  width: 115px;
-  height: 115px;
-  margin: 0 10px;
-}
-.img-day3 {
-  display: block;
-  width: 100px;
-  height: 100px;
-  margin: 0 15px;
-}
-.img-day4 {
-  display: block;
-  width: 115px;
-  height: 115px;
-  margin: 0 10px;
-}
-.img-day5 {
-  display: block;
-  width: 115px;
-  height: 115px;
-  margin: 0 10px;
 }
