@@ -117,9 +117,14 @@ function showWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-  document.querySelector("#feels-like").innerHTML =
-    Math.round(celsiusTemperature);
-  celsiusTemperature = response.data.main.feels_like;
+  function fahrenheitFeelsLike(response) {
+    let fahrenheitElement = document.querySelector("#feels-like");
+    let fahrenheitTemperature = Math.round(celsiusTemperature * 9) / 5 + 32;
+    fahrenheitElement.innerHTML = fahrenheitTemperature(
+      response.data.main.feels_like
+    );
+  }
+
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -198,4 +203,4 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
-searchCity("New York");
+searchCity("Tampa");
