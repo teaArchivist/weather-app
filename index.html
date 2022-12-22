@@ -46,7 +46,10 @@
                     <li>
                       <h2 class="main-degrees" id="temperature"></h2>
                     </li>
-                    <span class="units">°F </span>
+                    <span class="units"
+                      ><a href="#" id="fahrenheit-link" class="active">°F</a> |
+                      <a href="#" id="celsius-link">°C</a>
+                    </span>
                     <li id="description">Clear</li>
                     <li id="date">Sunday 3:30</li>
                   </ul>
@@ -66,7 +69,7 @@
             <div class="row">
               <ul class="main-data-results">
                 <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> m/s</li>
+                <li>Wind: <span id="wind"></span> km/hr</li>
                 <li>Sunrise: <span id="sunrise">7:31</span> am</li>
                 <li>Sunset: <span id="sunset">7:01</span> pm</li>
                 <li>Rain: <span id="rain">30</span>%</li>
@@ -123,11 +126,11 @@
             <span class="high-low-five">H:74° L:58°</span>
           </div>
         </div>
+        Open-source code by
+        <a href="https://github.com/teaArchivist/weather-app">teaArchivist</a>
+
+        <script src="src/script.js"></script>
       </div>
     </div>
-    Open-source code by
-    <a href="https://github.com/teaArchivist/weather-app">teaArchivist</a>
-
-    <script src="src/script.js"></script>
   </body>
 </html>
