@@ -29,8 +29,12 @@ function formatDate(timestamp) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-
-  return `${weekday}, ${month} ${date} ${hours}:${minutes}`;
+  let ampm = hours >= 12 ? "pm" : "am";
+  hours = hours % 12;
+  hours = hours ? hours : 12;
+  minutes = minutes.toString().padStart(2, "0");
+  let strTime = hours + ":" + minutes + " " + ampm;
+  return `${weekday}, ${month} ${date} ${strTime}`;
 }
 let mainDate = document.querySelector("#date");
 mainDate.innerHTML = formatDate(now);
@@ -109,6 +113,9 @@ function showWeather(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#feels-like").innerHTML =
+    Math.round(celsiusTemperature);
+  celsiusTemperature = response.data.main.feels_like;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -122,7 +129,7 @@ function showWeather(response) {
   document.querySelector("#sunset").innerHTML = formatTime(
     response.data.sys.sunset * 1000
   );
-
+  console.log(response);
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
