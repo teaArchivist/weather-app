@@ -7,9 +7,15 @@
       src="https://kit.fontawesome.com/d7544a9920.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>5 Day Forecast</title>
+    <title>Forecast</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -36,8 +42,8 @@
         <button type="button" class="btn btn-light" id="btn-current-location">
           Current Location
         </button>
-        <img src="images/sun-regular.svg" class="img-sun" id="icon" alt="sun" />
-        <div class="card location border-light" style="width: 22rem">
+        <img src="" class="img-sun" id="icon" alt="sun" />
+        <div class="card location border-light" style="width: 24rem">
           <div class="card-body">
             <div class="row">
               <div class="col-6">
@@ -50,8 +56,8 @@
                       ><a href="#" id="fahrenheit-link" class="active">°F</a> |
                       <a href="#" id="celsius-link">°C</a>
                     </span>
-                    <li id="description">Clear</li>
-                    <li id="date">Sunday 3:30</li>
+                    <li id="description"></li>
+                    <li id="date"></li>
                   </ul>
                 </div>
               </div>
@@ -63,7 +69,7 @@
         </div>
         <div
           class="card current-data border-light"
-          style="width: 10rem; height: 8rem"
+          style="width: 8rem; height: 8rem"
         >
           <div class="card-body catagories">
             <div class="row">

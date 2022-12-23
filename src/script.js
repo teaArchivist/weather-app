@@ -34,7 +34,7 @@ function formatDate(timestamp) {
   hours = hours ? hours : 12;
   minutes = minutes.toString().padStart(2, "0");
   let strTime = hours + ":" + minutes + " " + ampm;
-  return `${weekday}, ${month} ${date} ${strTime}`;
+  return `${weekday}, ${strTime} </br> ${month} ${date}`;
 }
 let mainDate = document.querySelector("#date");
 mainDate.innerHTML = formatDate(now);
