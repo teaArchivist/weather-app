@@ -17,7 +17,6 @@ li::first-letter {
   text-transform: capitalize;
 }
 .weather-app {
-  background-image: url("images/seascape.jpg");
   background: linear-gradient(to top, #dfe9f3 0%, white 100%);
   background-position: center;
   border: 1px solid #dadde1;
